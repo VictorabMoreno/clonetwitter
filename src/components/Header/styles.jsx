@@ -3,14 +3,29 @@ import styled from 'styled-components'
 export const Topo = styled.div`
 width: 100%;
 height: 8vh;
-position: sticky;
+position: fixed;
 top: 0;
 background: black;
 
-> h1 {
+   >#link {
+    >svg {
+    font-size: 18px;
+    color: white;
+    margin: 5px 30px 0 0;
+   }
+   }
+
+  >#flex {
+    > h1 {
     font-size: 20px;
     font-weight: 600;
-}
+    }
+ 
+    >p {
+    font-size: 12px;
+   }  
+    
+  }
 
 `;
 
@@ -32,7 +47,7 @@ export const Img = styled.img`
 border-radius: 50%;
 height: 30px;
 width: 30px;
-margin-left: 20px;
+margin:0 20px;
 
  @media (min-width:500px) {
     display: none;
@@ -80,8 +95,8 @@ export const Display = styled.div`
 
  export const Down = styled.div `
     width: 100%;
-    height: 7vh;
-    position: sticky;
+    height: 60px;
+    position: fixed;
     bottom: 0;
     background: black;
     justify-content: space-around;
@@ -142,7 +157,7 @@ margin: auto;
         }
 
         >#corredor {
-            width: 598px;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             height: 100%;
@@ -151,7 +166,7 @@ margin: auto;
  `;
 
  export const Bar = styled.div`
-   padding:5px 0px 0 0 ;
+   padding:10px 0px 0 0 ;
    width:auto;
    height: 90%;
    color: white;

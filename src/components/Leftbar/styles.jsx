@@ -5,6 +5,8 @@ export const Bar = styled.div`
   @media(min-width:500px) {
     width: 100%;
     height: 100%;
+    position: sticky;
+    bottom: 0;
 
      
   }

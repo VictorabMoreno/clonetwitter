@@ -43,7 +43,6 @@ export const Barnewss = styled.div`
 `;
 
 export const Barnews = styled.div`
-   
    height: 100%;
    margin: 20px 0 0 20px;
    padding-bottom: 100px;
@@ -220,5 +219,77 @@ export const Follow = styled.div`
    height: 70px;
    justify-content: space-between;
    margin: 15px auto;
+`;
+
+export const Recomend = styled.div`
+   width: 90%;
+   height: 70px;
+   justify-content: space-between;
+   margin: 15px auto;
+
+   >#nada {
+
+     #col {
+      >p {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      >#display {
+        >#name {
+          font-size: 13px;
+          font-weight: 600;
+        }
+
+        >span {
+          font-size: 11px;
+        }
+      }
+     }
+
+    >#div {
+     padding: 10px;
+      background: red;
+      border-radius: 10px;
+      margin: auto;
+
+      >svg {
+      font-size: 24px;
+     }
+    }
+
+    #divv {
+      border-radius: 10px;
+     padding: 10px;
+      background: purple;
+
+      >svg {
+      font-size: 24px;
+      margin: auto;
+     }
+    }
+   }
+
+`;
+
+export const Grid = styled.div`
+  width:60% ;
+  margin:30% auto 0;
+
+  >h1 {
+    font-size: 28px;
+  }
+`;
+
+export const MessageButton = styled.div`
+  text-align: center;
+  width: 170px;
+  padding-top: 30px;
+
+  >span {
+    padding: 15px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
 `;
 
