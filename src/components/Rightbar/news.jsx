@@ -1,5 +1,7 @@
-import {Follow, Img, Recomendconteiner, Button, Trend,Trendd, Corpo,Corpoo, Barnews, Barnewss, CentralConteiner } from "./styles"
+import {Recomend, Follow, Img, Recomendconteiner, Button, Trend,Trendd, Corpo,Corpoo, Barnews, Barnewss, CentralConteiner } from "./styles"
 import carasdocarro from "../Header/caras_do_carro.png"
+import { Display } from "../Main/styles"
+import {BsNewspaper} from 'react-icons/bs'
 
 export const Postnews = ({notice, moment, text}) => {
     return(
@@ -70,6 +72,27 @@ export const Recomendfollow = ({nome, username}) => {
   )
 }
 
+export const Recomendrecomend = ({theme, nome, username, div}) => {
+  return(
+    <>
+      <Recomend className="flex items-center">
+        <div id="nada" className="flex items-center">
+          <div id={div}><BsNewspaper /></div>
+          <div id="col" className="flex-col pl-3">
+            <p className="text-white">{theme}</p>
+            <Display id="display">
+              <span id="name" className="text-white">{nome}</span>
+              <span className="text-pratatt">@{username}</span>
+            </Display>
+          </div>
+          </div>
+        <Button>Seguir</Button>
+      </Recomend>
+    </>
+  )
+}
+
+
 export const News = () => {
     return (
         <>
@@ -77,16 +100,16 @@ export const News = () => {
                     <CentralConteiner>
                           <h1 className="text-platinatt">O que está acontecento</h1>
                           <Postnews moment="LIVE" notice="War in Ukrania" text="Ultimas noticias sobre a guerra da ukrania"/>
-                          <Posttrend notice="Trending in brazil" trend="Gabi gostosa" trendstatus="33.5K tweets" />
-                          <Posttrend notice="Trending in brazil" trend="Gabi gostosa" trendstatus="33.5K tweets" />
-                          <Posttrend notice="Trending in brazil" trend="Gabi gostosa" trendstatus="33.5K tweets" />
+                          <Posttrend notice="Trending in brazil" trend="Clone do twitter" trendstatus="33.5K tweets" />
+                          <Posttrend notice="Trending in brazil" trend="Clone do twitter" trendstatus="33.5K tweets" />
+                          <Posttrend notice="Trending in brazil" trend="Clone do twitter" trendstatus="33.5K tweets" />
                           <Postnews moment="LIVE" notice="War in Ukrania" text="Ultimas noticias sobre a guerra da ukrania"/>
                       </CentralConteiner>
                       <Recomendconteiner>
                         <h1 className="text-platinatt">Quem seguir?</h1>
                         <Recomendfollow nome="Victormoreno" username="victormoreno" />
-                        <Recomendfollow nome="Gabriellemendes" username="gabbemendes" />
-                        <Recomendfollow nome="Gabilinda" username="gabilinda" />
+                        <Recomendfollow nome="Gabriellesilva" username="gabsilva" />
+                        <Recomendfollow nome="luisfernando" username="luisfernando" />
                       </Recomendconteiner>
 
                 </Barnews>
